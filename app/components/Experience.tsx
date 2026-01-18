@@ -11,31 +11,31 @@ interface ExperienceCard {
 const experienceCards: ExperienceCard[] = [
   {
     id: 1,
-    title: "WebHR - HR Management App",
+    title: "Promatics - UI/UX Designer",
     description:
-      "WebHR automates all of your company's HR processes such as Recruitment, Onboarding, Payroll, Time & Attendance, Leaves & PTO, Performance, and much more.",
+      "Worked as a UI/UX Designer using Figma and Adobe tools to design intuitive website and mobile app interfaces, and translated designs into responsive static websites.",
     icon: "/cards/card-1.png",
   },
   {
     id: 2,
-    title: "WebHR Kiosk - Time Clock Kiosk",
+    title: "Freelance - Web Developer",
     description:
-      "WebHR Kiosk is a time clock kiosk that allows you to clock in and out of your work. It is a simple and easy to use app that allows you to clock in and out of your work.",
+      "Worked as a Freelance Web Developer under guidance, designing and developing responsive websites for local businesses to enhance their online presence.",
     icon: "/cards/card-2.png",
   },
   {
     id: 3,
-    title: "Somezing - AI-Powered Agents",
+    title: "Nirwan Infotech - Web Developer Trainee",
     description:
-      "Somezing is a AI-Powered Agents to Automate Your Workflows. It is a simple and easy to use app that allows you to automate your workflows.",
-    icon: "/cards/card-3.png",
+      "Worked with HTML, CSS, JavaScript, DOM manipulation, API handling, and Tailwind to design, develop, and maintain responsive web applications.",
+    icon: "/cards/card3.png",
   },
   {
     id: 4,
-    title: "FileIT - File Sharing App",
+    title: "GN Infotech - Web Developer Trainee",
     description:
-      "FileIT is a file sharing app that allows you to share files with your friends and family. It is a simple and easy to use app that allows you to share files with your friends and family.",
-    icon: "/cards/card-4.png",
+      "Gained hands-on experience in HTML, CSS, JavaScript, and Tailwind CSS to build modern, responsive, and dynamic web applications.",
+    icon: "/cards/card4.jpg",
   },
 ];
 
@@ -52,8 +52,7 @@ export default function Experience(): React.JSX.Element {
               key={card.id}
               // className="bg-gradient-to-r from-cyan-400 via-cyan-800 to-cyan-400  backdrop-blur-sm rounded-xl p-6 border-t-3 border-cyan-800 hover:shadow-2xl hover:shadow-cyan-800 flex items-center gap-4"
 
-
-              className="bg-white  backdrop-blur-sm rounded-xl p-6 border-t-3 border-cyan-400 hover:shadow-2xl hover:shadow-cyan-100 flex items-center gap-4"
+              className="bg-white  backdrop-blur-sm rounded-xl p-6 border-t-3 border-purple-900 hover:shadow-2xl hover:shadow-purple-200 flex items-center gap-4"
             >
               <div className="mb-4 ">
                 <Image
@@ -69,14 +68,14 @@ export default function Experience(): React.JSX.Element {
                   {card.title}
                 </h3>
                 <p className="text-black/70 text-sm mb-4">{card.description}</p>
-                <Link
+                {/* <Link
                   href="https://ibiimemon.com/lab"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-purple-400 hover:text-purple-300 font-medium text-sm transition-colors inline-block"
                 >
                   LEARN MORE →
-                </Link>
+                </Link> */}
               </div>
             </div>
           ))}

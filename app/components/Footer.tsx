@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+// import Image from "next/image";
 
 export default function Footer(): React.JSX.Element {
   return (
@@ -15,16 +15,16 @@ export default function Footer(): React.JSX.Element {
             in mind? Let&apos;s connect.
           </p>
           <a
-            href="mailto:ibii.code@gmail.com"
+            href="mailto:jasdeepmatharug@gmail.com"
             className="text-md text-purple-400 hover:text-purple-300 transition-colors"
           >
-            ibii.code@gmail.com
+            jasdeepmatharug@gmail.com
           </a>
         </div>
 
         {/* Social Media Icons */}
         <div className="flex justify-center gap-6 mt-12">
-          <Link
+          {/* <Link
             href="https://www.instagram.com/ibii.memon/"
             target="_blank"
             rel="noopener noreferrer"
@@ -38,9 +38,9 @@ export default function Footer(): React.JSX.Element {
               height={20}
               className="w-5 h-5"
             />
-          </Link>
+          </Link> */}
           <Link
-            href="https://github.com/ibrahimmemonn"
+            href="https://github.com/Jassamatharu1"
             target="_blank"
             rel="noopener noreferrer"
             className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 border border-purple-500/30 hover:border-purple-500/50 transition-all"
@@ -55,7 +55,7 @@ export default function Footer(): React.JSX.Element {
             </svg>
           </Link>
           <Link
-            href="https://www.linkedin.com/in/ibrahimmemonn/"
+            href="https://www.linkedin.com/in/jassamatharu1/"
             target="_blank"
             rel="noopener noreferrer"
             className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 border border-purple-500/30 hover:border-purple-500/50 transition-all"

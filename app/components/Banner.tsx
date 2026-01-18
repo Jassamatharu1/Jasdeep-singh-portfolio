@@ -63,7 +63,7 @@ export default function Banner(): React.JSX.Element {
               <div className="lg:hidden  -top-150 z-10">
                 <div className="relative inline-block ">
                   <Image
-                    src="/assets/arrow.png"
+                    src="/assets/arrowblack.png"
                     alt="Arrow pointer"
                     width={80}
                     height={80}
@@ -73,14 +73,14 @@ export default function Banner(): React.JSX.Element {
                   <div className="relative">
                     <p className="text-black text-lg whitespace-nowrap">
                       Hello! I Am{" "}
-                      <span className="text-cyan-400">Jasdeep Singh</span>
+                      <span className="text-purple-900">Jasdeep Singh</span>
                     </p>
                   </div>
                   <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-white/10"></div>
                 </div>
               </div>
               <Image
-                src="/assets/profileimage.png"
+                src="/assets/profileimagepurple.png"
                 alt="Jasdeep Singh - Software Engineer and Designer"
                 width={300}
                 height={300}
@@ -103,7 +103,7 @@ export default function Banner(): React.JSX.Element {
             {/* Desktop: Hello text in original position */}
             <div className="hidden lg:inline-block relative">
               <Image
-                src="/assets/arrow.png"
+                src="/assets/arrowblack.png"
                 alt="Arrow pointer"
                 width={100}
                 height={100}
@@ -118,7 +118,7 @@ export default function Banner(): React.JSX.Element {
               <div style={{ bottom: 40, position: "relative" }}>
                 <p className="text-black text-lg">
                   Hello! I Am{" "}
-                  <span className="text-sky-400">Jasdeep Singh</span>
+                  <span className="text-purple-900">Jasdeep Singh</span>
                 </p>
               </div>
               <div className="absolute -bottom-2 left-8 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-white/10"></div>
@@ -130,14 +130,14 @@ export default function Banner(): React.JSX.Element {
                 <br /> by its{" "}
                 <span className="relative inline-block">
                   <Image
-                    src="/assets/circle.png"
+                    src="/assets/circleblack.png"
                     alt="Circle"
                     width={200}
                     height={200}
                     className="absolute mt-2"
                   />
                   <span
-                    className="bg-gradient-to-r from-cyan-400 via-cyan-600 to-cyan-800 
+                    className="bg-gradient-to-r from-purple-500 via-purple-700 to-purple-950 
                   bg-clip-text text-transparent"
                   >
                     cover
@@ -157,7 +157,7 @@ export default function Banner(): React.JSX.Element {
             <span className="animate-pulse">|</span>
           </p>
           <p className="text-lg lg:text-xl text-black/90 tracking-wide flex flex-wrap items-center justify-center lg:justify-start gap-2">
-            <span>Currently, I&apos;m a Software Engineer at</span>
+            <span>Currently, I&apos;m a UI/UX designer at</span>
             <span className="flex items-center gap-2">
               <Image
                 src="/logo/promaticslogo.svg"
