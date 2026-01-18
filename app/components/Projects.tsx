@@ -42,7 +42,7 @@ export default function Projects(): React.JSX.Element {
                   <p className="text-purple-400 text-lg lg:text-xl mb-2 font-medium">
                     Featured Project
                   </p>
-                  <h3 className="text-3xl lg:text-4xl font-bold text-white mb-6">
+                  <h3 className="text-3xl lg:text-4xl font-bold text-black mb-6">
                     {project.title}
                   </h3>
                   {/* Description Card - extends over image */}
@@ -50,7 +50,7 @@ export default function Projects(): React.JSX.Element {
                     <div className={`bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-md rounded-2xl p-6 lg:p-8 border border-white/10 shadow-lg ${
                       isEven ? "lg:ml-[-20%]" : "lg:w-[calc(100%+20%)]"
                     }`}>
-                      <p className="text-white/90 text-base lg:text-lg leading-relaxed">
+                      <p className="text-black/90 text-base lg:text-lg leading-relaxed">
                         {project.description}
                       </p>
                     </div>
@@ -62,7 +62,7 @@ export default function Projects(): React.JSX.Element {
                         href={project.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-white hover:text-purple-400 transition-colors duration-200"
+                        className="text-black hover:text-purple-400 transition-colors duration-200"
                         aria-label="Visit project website"
                       >
                         <svg

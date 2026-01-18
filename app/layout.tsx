@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next"
 
 import "./globals.css";
+import "./styles.scss";
 
 const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700", "800", "900"],

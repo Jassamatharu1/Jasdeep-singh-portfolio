@@ -6,10 +6,10 @@ export default function Footer(): React.JSX.Element {
     <footer id="contact" className="py-10  px-6 border-t border-white/10">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-black mb-6">
             Contact
           </h2>
-          <p className="text-md text-white/80 max-w-2xl mx-auto mb-8">
+          <p className="text-md text-black/80 max-w-2xl mx-auto mb-8">
             I&apos;m currently looking to join a cross-functional team that values 
             improving people&apos;s lives through accessible design, or have a project 
             in mind? Let&apos;s connect.
@@ -47,7 +47,7 @@ export default function Footer(): React.JSX.Element {
             aria-label="GitHub"
           >
             <svg
-              className="w-5 h-5 text-white"
+              className="w-5 h-5 text-black"
               fill="currentColor"
               viewBox="0 0 24 24"
             >
@@ -62,7 +62,7 @@ export default function Footer(): React.JSX.Element {
             aria-label="LinkedIn"
           >
             <svg
-              className="w-5 h-5 text-white"
+              className="w-5 h-5 text-black"
               fill="currentColor"
               viewBox="0 0 24 24"
             >
@@ -72,7 +72,7 @@ export default function Footer(): React.JSX.Element {
         </div>
 
         <div className="text-center mt-12 pt-8 border-t border-white/10">
-          <p className="text-white/60 text-sm">
+          <p className="text-black/60 text-sm">
             © {new Date().getFullYear()} Jasdeep Singh. All rights reserved.
           </p>
         </div>

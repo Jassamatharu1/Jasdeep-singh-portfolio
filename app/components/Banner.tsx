@@ -4,7 +4,12 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 
 export default function Banner(): React.JSX.Element {
-  const texts = ["Software Engineer", "UI/UX Designer", "JavaScript Developer", "ReactJS Developer"];
+  const texts = [
+    "Software Engineer",
+    "UI/UX Designer",
+    "JavaScript Developer",
+    "ReactJS Developer",
+  ];
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -12,7 +17,7 @@ export default function Banner(): React.JSX.Element {
 
   useEffect(() => {
     const currentText = texts[currentTextIndex];
-    
+
     if (!isDeleting) {
       // Typing effect
       if (displayedText.length < currentText.length) {
@@ -66,16 +71,16 @@ export default function Banner(): React.JSX.Element {
                     style={{ width: "auto", height: "auto" }}
                   />
                   <div className="relative">
-                    <p className="text-white text-lg whitespace-nowrap">
+                    <p className="text-black text-lg whitespace-nowrap">
                       Hello! I Am{" "}
-                      <span className="text-purple-400">Jasdeep Singh</span>
+                      <span className="text-cyan-400">Jasdeep Singh</span>
                     </p>
                   </div>
                   <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-white/10"></div>
                 </div>
               </div>
               <Image
-                src="/assets/me.png"
+                src="/assets/profileimage.png"
                 alt="Jasdeep Singh - Software Engineer and Designer"
                 width={300}
                 height={300}
@@ -84,7 +89,7 @@ export default function Banner(): React.JSX.Element {
                 priority
               />
               <Image
-                src="/assets/me-glow.png"
+                src="/assets/profileimageglow.png"
                 alt="Jasdeep Singh - Software Engineer and Designer"
                 width={300}
                 height={300}
@@ -103,52 +108,71 @@ export default function Banner(): React.JSX.Element {
                 width={100}
                 height={100}
                 className="absolute "
-                style={{ left: "-100px", top: "-50px", width: "auto", height: "auto" }}
+                style={{
+                  left: "-100px",
+                  top: "-50px",
+                  width: "auto",
+                  height: "auto",
+                }}
               />
               <div style={{ bottom: 40, position: "relative" }}>
-                <p className="text-white text-lg">
+                <p className="text-black text-lg">
                   Hello! I Am{" "}
-                  <span className="text-purple-400">Jasdeep Singh</span>
+                  <span className="text-sky-400">Jasdeep Singh</span>
                 </p>
               </div>
               <div className="absolute -bottom-2 left-8 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-white/10"></div>
             </div>
             <div className="">
               <p className="text-2xl"> A Designer who </p>
-              <h1 className="text-5xl tracking-tight lg:text-7xl font-semibold text-white leading-tight">
+              <h1 className="text-5xl tracking-tight lg:text-7xl font-semibold text-black leading-tight">
                 Judges a book
                 <br /> by its{" "}
                 <span className="relative inline-block">
-                  <Image src="/assets/circle.png" alt="Circle" width={200} height={200} className="absolute mt-2" />
-                  <span className="bg-gradient-to-r from-violet-600 via-violet-400 to-violet-600 
-                  bg-clip-text text-transparent">
+                  <Image
+                    src="/assets/circle.png"
+                    alt="Circle"
+                    width={200}
+                    height={200}
+                    className="absolute mt-2"
+                  />
+                  <span
+                    className="bg-gradient-to-r from-cyan-400 via-cyan-600 to-cyan-800 
+                  bg-clip-text text-transparent"
+                  >
                     cover
                   </span>
                 </span>
                 ...
               </h1>
-              <p className="text-md text-white/80">
+              <p className="text-md text-black/80">
                 Because if the cover does not impress you what else can?
               </p>
             </div>
           </div>
         </div>
         <div className="space-y-3 pt-15 text-center lg:text-left">
-          <p className="text-5xl text-white font-bold">
+          <p className="text-5xl text-black font-bold">
             I&apos;m a {displayedText}
             <span className="animate-pulse">|</span>
           </p>
-          <p className="text-lg lg:text-xl text-white/90 tracking-wide flex flex-wrap items-center justify-center lg:justify-start gap-2">
+          <p className="text-lg lg:text-xl text-black/90 tracking-wide flex flex-wrap items-center justify-center lg:justify-start gap-2">
             <span>Currently, I&apos;m a Software Engineer at</span>
             <span className="flex items-center gap-2">
-              <Image src="/logo/promaticslogo.svg" alt="promaticslogo" width={20} height={20} className="w-5 h-5" style={{ width: "auto", height: "auto" }} />
+              <Image
+                src="/logo/promaticslogo.svg"
+                alt="promaticslogo"
+                width={20}
+                height={20}
+                className="w-36"
+              />
               {/* <span className="text-blue-400 font-semibold">WebHR,</span> */}
             </span>
           </p>
-          <p className="text-lg text-white/80 max-w-2xl mt-15 mx-auto lg:mx-0">
-            A self-taught UI/UX designer, functioning in the industry for 3+
-            years now. I make meaningful and delightful digital products that
-            create an equilibrium between user needs and business goals.
+          <p className="text-lg text-black/80 max-w-2xl mt-15 mx-auto lg:mx-0">
+            A self-taught UI/UX designer passionate about crafting meaningful
+            and delightful digital experiences. I focus on balancing user needs
+            with business goals through thoughtful design.
           </p>
         </div>
       </div>
